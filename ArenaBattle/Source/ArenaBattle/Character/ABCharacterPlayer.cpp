@@ -14,7 +14,7 @@ AABCharacterPlayer::AABCharacterPlayer()
 {
 	// Camera arm
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	// Set Root Component as Camera
+	// Set Camera Component as Child of RootComponent
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 400.0f;
 	CameraBoom->bUsePawnControlRotation = true;
